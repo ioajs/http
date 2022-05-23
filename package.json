@@ -1,0 +1,28 @@
+{
+  "name": "@ioa/http",
+  "type": "module",
+  "version": "20.0.5",
+  "description": "ioa.js 的 http 组件, 兼容 koa.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "pub": "npm publish --access public",
+    "test": "jtm"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./*"
+  },
+  "author": "",
+  "license": "ISC",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@ioa/api": "^20.0.4",
+    "ioa": "^20.0.3"
+  }
+}
